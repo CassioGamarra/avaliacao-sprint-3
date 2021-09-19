@@ -1,0 +1,15 @@
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/CardapioDigital.deps.json
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/CardapioDigital.runtimeconfig.json
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/CardapioDigital.runtimeconfig.dev.json
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/CardapioDigital.dll
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/ref/CardapioDigital.dll
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/CardapioDigital.pdb
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.csproj.AssemblyReference.cache
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.AssemblyInfoInputs.cache
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.AssemblyInfo.cs
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.csproj.CoreCompileInputs.cache
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.dll
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/ref/CardapioDigital.dll
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.pdb
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.genruntimeconfig.cache
