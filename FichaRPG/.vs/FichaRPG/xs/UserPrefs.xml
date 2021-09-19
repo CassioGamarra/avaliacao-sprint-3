@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{3EE1A63B-184F-432A-9B1C-8A7D8FF48E45}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FichaRPG/Program.cs">
+    <Files>
+      <File FileName="FichaRPG/Program.cs" Line="40" Column="1" />
+      <File FileName="FichaRPG/atributos.json" Line="22" Column="2" />
+      <File FileName="FichaRPG/classes.json" Line="14" Column="7" />
+      <File FileName="FichaRPG/ids_filtrados.json" Line="3" Column="2" />
+      <File FileName="FichaRPG/Interface/IDataService.cs" Line="11" Column="27" />
+      <File FileName="FichaRPG/Model/AtributosRoot.cs" Line="11" Column="15" />
+      <File FileName="FichaRPG/Model/Classes.cs" Line="7" Column="44" />
+      <File FileName="FichaRPG/RootClass/ClassesRoot.cs" Line="1" Column="1" />
+      <File FileName="FichaRPG/RootClass/IdsRoot.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FichaRPG" expanded="True">
+            <Node name="FichaRPG" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FichaRPG PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/FichaRPG/FichaRPG/Model/Classes.cs" relfile="FichaRPG/Model/Classes.cs" line="22" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7UlI++VBCLjijoF85DP6aJxrbXPIbcl9LzVsT1+235u8MaZotF4Y4gllonxJMuNDfs62XW2Qp812zthTCGT3gA==",
+  "success": true,
+  "projectFilePath": "/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/FichaRPG/FichaRPG/FichaRPG.csproj",
+  "expectedPackageFiles": [
+    "/Users/cassiogamarra/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

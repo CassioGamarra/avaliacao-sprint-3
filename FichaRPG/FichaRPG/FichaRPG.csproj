@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ArquivosJSON\" />
+    <None Remove="Modelos\" />
+    <None Remove="Models\" />
+    <None Remove="RootClass\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="JSONFiles\atributos.json" />
+    <None Remove="JSONFiles\classes.json" />
+    <None Remove="JSONFiles\ids_filtrados.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JSONFiles\" />
+    <Folder Include="Interface\" />
+    <Folder Include="Model\" />
+    <Folder Include="RootClass\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JSONFiles\atributos.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JSONFiles\classes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JSONFiles\ids_filtrados.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

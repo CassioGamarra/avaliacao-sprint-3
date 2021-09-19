@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{78A8A330-2908-41F2-832F-44AA716EB9CA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CardapioDigital/Pedido.cs">
-    <Files>
-      <File FileName="CardapioDigital/Program.cs" Line="83" Column="16" />
-      <File FileName="CardapioDigital/Pedido.cs" Line="1" Column="1" />
-      <File FileName="CardapioDigital/Produto.cs" />
-      <File FileName="CardapioDigital/Cardapio.cs" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CardapioDigital" expanded="True">
             <Node name="CardapioDigital" expanded="True">
-              <Node name="Pedido.cs" selected="True" />
+              <Node name="Cardapio.cs" selected="True" />
             </Node>
           </Node>
         </State>
