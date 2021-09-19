@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
+using Newtonsoft.Json;
+using System.Linq;
 
 namespace CardapioDigital
 {
@@ -8,9 +9,7 @@ namespace CardapioDigital
     {
 
         public static int[] mesasAceitas = { 1, 2, 3, 4 };
-        public static Cardapio cardapio = new Cardapio();
-        public static List<Produto> listaProdutos = cardapio.GerarCardapio();
-
+        
         static void Main(string[] args)
         {
             bool exibirMenu = true;
@@ -47,12 +46,28 @@ namespace CardapioDigital
             }
         }
 
+        public static List<Produto> GerarCardapio()
+        {
+            List<Produto> listaDeProduto = new List<Produto>();
+
+            listaDeProduto.Add(new Produto(100, "Cachorro quente", 5.7));
+            listaDeProduto.Add(new Produto(101, "X Completo", 18.30));
+            listaDeProduto.Add(new Produto(102, "X Salada", 16.50));
+            listaDeProduto.Add(new Produto(103, "Hamburguer", 22.40));
+            listaDeProduto.Add(new Produto(104, "Coca 2L", 10.00));
+            listaDeProduto.Add(new Produto(105, "Refrigerante", 1.00));
+
+            return listaDeProduto;
+        }
+
         private static void RealizarPedido()
         {
             Console.Clear();  
             bool isValid = true;
             string numeroMesa;
             string msgValidacaoMesa;
+            Cardapio cardapio = new Cardapio();
+            cardapio.ListaDeProdutos = GerarCardapio();
             do
             {
                 msgValidacaoMesa = isValid ? "Qual o numero da mesa?: " : "Mesa invalida! Digite novamente o numero da mesa: "; 
@@ -74,7 +89,7 @@ namespace CardapioDigital
             } while (!isValid);
              
             Console.WriteLine("Código  Produto               Preço Unitário (R$)");
-            foreach (Produto produto in listaProdutos)
+            foreach (Produto produto in cardapio.ListaDeProdutos)
             {
                 Console.WriteLine(produto.Codigo.ToString().PadRight(7, ' ') + produto.Descricao.PadRight(20, ' ') + "R$ " + produto.ValorUnitario.ToString("0.00").Replace('.', ',').PadLeft(5, ' '));
             }
@@ -82,6 +97,7 @@ namespace CardapioDigital
 
             Pedido pedido = new Pedido();
             pedido.ListaDeProdutos = new List<Produto>();
+            Dictionary<String, int> listaPedidoAmigavel = new Dictionary<String, int>();
             string codigo = "";
             int quantidade;
             while (codigo != "999")
@@ -89,7 +105,7 @@ namespace CardapioDigital
                 Console.Write("Informe o Codigo: ");
                 codigo = Console.ReadLine();
                 isValid = false;
-                foreach (Produto produto in listaProdutos)
+                foreach (Produto produto in cardapio.ListaDeProdutos)
                 {
                     if (codigo == produto.Codigo.ToString())
                     { 
@@ -97,8 +113,17 @@ namespace CardapioDigital
                         bool isQtdValid = int.TryParse(Console.ReadLine(), out quantidade);
                         if (isQtdValid)
                         {
-                            pedido.ListaDeProdutos.Add(produto);
-                            pedido.ValorTotal += produto.ValorUnitario * quantidade; 
+                            pedido.ListaDeProdutos.Add(produto);  
+                            pedido.ValorTotal += produto.ValorUnitario * quantidade;
+                            //Adiciona na lista para exibir
+                            if (!listaPedidoAmigavel.ContainsKey(produto.Descricao))
+                            {
+                                listaPedidoAmigavel.Add(produto.Descricao, quantidade);
+                            }
+                            else
+                            {
+                                listaPedidoAmigavel[produto.Descricao] += quantidade;
+                            }
                         }
                         else
                         {
@@ -112,13 +137,19 @@ namespace CardapioDigital
                     Console.WriteLine("Codigo invalido!");
                 }
             }
+            pedido.ValorTotal = Math.Round(pedido.ValorTotal);
             Console.Clear();
-            Console.WriteLine("A mesa " + numeroMesa + " pediu os seguintes itens:"); 
-            for(int i = 0; i < pedido.ListaDeProdutos.Count; i++)
+            Console.WriteLine("A mesa " + numeroMesa + " pediu os seguintes itens:");
+
+            foreach (KeyValuePair<String, int> kvp in listaPedidoAmigavel)
             {
-                Console.WriteLine((i+1) + " - " + pedido.ListaDeProdutos[i].Descricao);
+                Console.WriteLine(kvp.Value + " - " + kvp.Key);
             }
-            Console.WriteLine("Com o valor total de R$: " + pedido.ValorTotal.ToString("0.00").Replace('.', ','));
+
+            Console.WriteLine("Com o valor total de R$: " + pedido.ValorTotal.ToString("0.0").Replace('.', ','));
+             
+            Console.WriteLine(JsonConvert.SerializeObject(pedido.ListaDeProdutos.Distinct().ToList(), Formatting.Indented)); 
+
             Console.Write("Pressione uma tecla para continuar...");
             Console.ReadKey();
         }  

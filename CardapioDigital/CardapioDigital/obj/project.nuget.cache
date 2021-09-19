@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9lw1WFcJyS8b6r7NUKW5nJv2oLuFSLQo9z/OlCMUrft+/SDCJ7cEFVs+gJl2qdNZDeWA+rcuaJvY8RaUfGZk/A==",
+  "dgSpecHash": "Pfq9b60IdVhSTFixwMpo9+DZQD8f8O5v+U/bEaFlFl5p6RQTQG5qEpP037JCIXr1+2DByBcR++irHmjM/MHaQw==",
   "success": true,
   "projectFilePath": "/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/CardapioDigital.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/cassiogamarra/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

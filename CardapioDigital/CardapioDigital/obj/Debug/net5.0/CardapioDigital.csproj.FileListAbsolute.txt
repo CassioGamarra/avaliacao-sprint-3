@@ -13,3 +13,5 @@
 /Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/ref/CardapioDigital.dll
 /Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.pdb
 /Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.genruntimeconfig.cache
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/cassiogamarra/Documents/github/avaliacao-sprint-3/CardapioDigital/CardapioDigital/obj/Debug/net5.0/CardapioDigital.csproj.CopyComplete
